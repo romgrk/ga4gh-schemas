@@ -23,6 +23,7 @@ message Individual {
   string recruitement_province = 12;        // "Quebec",
   string created = 13;                      // "iso date"
   string updated = 14;                      // "iso date"
+  string dataset_id = 15;                   // "dataset_id"
 
   // The genetic sex of this individual.
   // Use `null` when unknown or not applicable.
@@ -55,6 +56,8 @@ message Biosample {
   string disease_ontology_uri = 9;      // "http: // codes.iarc.fr/code/3298",
   string created = 10;                  // "iso date"
   string updated = 11;                  // "iso date"
+  string dataset_id = 12;               // "dataset_id"
+  string individual_id = 13;            // "individual_id"
 }
 
 
