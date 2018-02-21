@@ -10,7 +10,7 @@ import "ga4gh/common.proto";
 
 message Individual {
   string id = 1;                            // "PRO-00015S",
-  Age age = 2;                              // 13,
+  int32 age = 2;                              // 13,
   string sex = 3;                           // "Female",
   string ethnicity = 4;                     // "caucasion",
   string internal_id = 5;                   // null,
