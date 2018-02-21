@@ -20,9 +20,10 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='ga4gh/schemas/ga4gh/bio_metadata.proto',
   package='ga4gh.schemas.ga4gh',
   syntax='proto3',
-  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/bio_metadata.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"\x8a\x02\n\nIndividual\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x0f\n\x07\x63reated\x18\x05 \x01(\t\x12\x0f\n\x07updated\x18\x06 \x01(\t\x12\x32\n\x07species\x18\x07 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12.\n\x03sex\x18\x08 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x33\n\nattributes\x18\n \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\"\xb0\x02\n\tBiosample\x12\n\n\x02id\x18\x01 \x01(\t\x12\x12\n\ndataset_id\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x04 \x01(\t\x12\x32\n\x07\x64isease\x18\x05 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTerm\x12\x0f\n\x07\x63reated\x18\x06 \x01(\t\x12\x0f\n\x07updated\x18\x07 \x01(\t\x12\x15\n\rindividual_id\x18\x08 \x01(\t\x12\x33\n\nattributes\x18\n \x01(\x0b\x32\x1f.ga4gh.schemas.ga4gh.Attributes\x12>\n\x1cindividual_age_at_collection\x18\x0b \x01(\x0b\x32\x18.ga4gh.schemas.ga4gh.Age\"H\n\x03\x41ge\x12\x0b\n\x03\x61ge\x18\x01 \x01(\t\x12\x34\n\tage_class\x18\x02 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTermb\x06proto3')
+  serialized_pb=_b('\n&ga4gh/schemas/ga4gh/bio_metadata.proto\x12\x13ga4gh.schemas.ga4gh\x1a ga4gh/schemas/ga4gh/common.proto\"\xde\x02\n\nIndividual\x12\n\n\x02id\x18\x01 \x01(\t\x12%\n\x03\x61ge\x18\x02 \x01(\x0b\x32\x18.ga4gh.schemas.ga4gh.Age\x12\x0b\n\x03sex\x18\x03 \x01(\t\x12\x11\n\tethnicity\x18\x04 \x01(\t\x12\x13\n\x0binternal_id\x18\x05 \x01(\t\x12\x1b\n\x13profyle_regional_id\x18\x06 \x01(\t\x12\x1b\n\x13profyle_national_id\x18\x07 \x01(\t\x12\x0f\n\x07\x64isease\x18\x08 \x01(\t\x12\x1c\n\x14\x64isease_ontology_uri\x18\t \x01(\t\x12\x1f\n\x17recruitement_group_name\x18\n \x01(\t\x12\x1d\n\x15recruitement_hospital\x18\x0b \x01(\t\x12\x1d\n\x15recruitement_province\x18\x0c \x01(\t\x12\x0f\n\x07\x63reated\x18\r \x01(\t\x12\x0f\n\x07updated\x18\x0e \x01(\t\"\xf9\x01\n\tBiosample\x12\n\n\x02id\x18\x01 \x01(\t\x12\x18\n\x10storage_location\x18\x02 \x01(\t\x12\x0f\n\x07remarks\x18\x03 \x01(\t\x12\r\n\x05tumor\x18\x04 \x01(\t\x12\x0f\n\x07\x64onorID\x18\x05 \x01(\t\x12\x13\n\x0btissue_type\x18\x06 \x01(\t\x12 \n\x18tissue_type_ontology_uri\x18\x07 \x01(\t\x12\x1e\n\x16sample_submission_date\x18\x08 \x01(\t\x12\x1c\n\x14\x64isease_ontology_uri\x18\t \x01(\t\x12\x0f\n\x07\x63reated\x18\n \x01(\t\x12\x0f\n\x07updated\x18\x0b \x01(\t\"H\n\x03\x41ge\x12\x0b\n\x03\x61ge\x18\x01 \x01(\t\x12\x34\n\tage_class\x18\x02 \x01(\x0b\x32!.ga4gh.schemas.ga4gh.OntologyTermb\x06proto3')
   ,
   dependencies=[ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2.DESCRIPTOR,])
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -42,58 +43,93 @@ _INDIVIDUAL = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.schemas.ga4gh.Individual.dataset_id', index=1,
-      number=2, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='age', full_name='ga4gh.schemas.ga4gh.Individual.age', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.schemas.ga4gh.Individual.name', index=2,
+      name='sex', full_name='ga4gh.schemas.ga4gh.Individual.sex', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='description', full_name='ga4gh.schemas.ga4gh.Individual.description', index=3,
+      name='ethnicity', full_name='ga4gh.schemas.ga4gh.Individual.ethnicity', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='created', full_name='ga4gh.schemas.ga4gh.Individual.created', index=4,
+      name='internal_id', full_name='ga4gh.schemas.ga4gh.Individual.internal_id', index=4,
       number=5, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='updated', full_name='ga4gh.schemas.ga4gh.Individual.updated', index=5,
+      name='profyle_regional_id', full_name='ga4gh.schemas.ga4gh.Individual.profyle_regional_id', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='species', full_name='ga4gh.schemas.ga4gh.Individual.species', index=6,
-      number=7, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='profyle_national_id', full_name='ga4gh.schemas.ga4gh.Individual.profyle_national_id', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='sex', full_name='ga4gh.schemas.ga4gh.Individual.sex', index=7,
-      number=8, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='disease', full_name='ga4gh.schemas.ga4gh.Individual.disease', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.schemas.ga4gh.Individual.attributes', index=8,
-      number=10, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='disease_ontology_uri', full_name='ga4gh.schemas.ga4gh.Individual.disease_ontology_uri', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='recruitement_group_name', full_name='ga4gh.schemas.ga4gh.Individual.recruitement_group_name', index=9,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='recruitement_hospital', full_name='ga4gh.schemas.ga4gh.Individual.recruitement_hospital', index=10,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='recruitement_province', full_name='ga4gh.schemas.ga4gh.Individual.recruitement_province', index=11,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='created', full_name='ga4gh.schemas.ga4gh.Individual.created', index=12,
+      number=13, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='updated', full_name='ga4gh.schemas.ga4gh.Individual.updated', index=13,
+      number=14, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -110,7 +146,7 @@ _INDIVIDUAL = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=98,
-  serialized_end=364,
+  serialized_end=448,
 )
 
 
@@ -129,65 +165,72 @@ _BIOSAMPLE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='dataset_id', full_name='ga4gh.schemas.ga4gh.Biosample.dataset_id', index=1,
+      name='storage_location', full_name='ga4gh.schemas.ga4gh.Biosample.storage_location', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='name', full_name='ga4gh.schemas.ga4gh.Biosample.name', index=2,
+      name='remarks', full_name='ga4gh.schemas.ga4gh.Biosample.remarks', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='description', full_name='ga4gh.schemas.ga4gh.Biosample.description', index=3,
+      name='tumor', full_name='ga4gh.schemas.ga4gh.Biosample.tumor', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='disease', full_name='ga4gh.schemas.ga4gh.Biosample.disease', index=4,
-      number=5, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='donorID', full_name='ga4gh.schemas.ga4gh.Biosample.donorID', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='created', full_name='ga4gh.schemas.ga4gh.Biosample.created', index=5,
+      name='tissue_type', full_name='ga4gh.schemas.ga4gh.Biosample.tissue_type', index=5,
       number=6, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='updated', full_name='ga4gh.schemas.ga4gh.Biosample.updated', index=6,
+      name='tissue_type_ontology_uri', full_name='ga4gh.schemas.ga4gh.Biosample.tissue_type_ontology_uri', index=6,
       number=7, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='individual_id', full_name='ga4gh.schemas.ga4gh.Biosample.individual_id', index=7,
+      name='sample_submission_date', full_name='ga4gh.schemas.ga4gh.Biosample.sample_submission_date', index=7,
       number=8, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='attributes', full_name='ga4gh.schemas.ga4gh.Biosample.attributes', index=8,
-      number=10, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='disease_ontology_uri', full_name='ga4gh.schemas.ga4gh.Biosample.disease_ontology_uri', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='individual_age_at_collection', full_name='ga4gh.schemas.ga4gh.Biosample.individual_age_at_collection', index=9,
-      number=11, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
+      name='created', full_name='ga4gh.schemas.ga4gh.Biosample.created', index=9,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='updated', full_name='ga4gh.schemas.ga4gh.Biosample.updated', index=10,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
@@ -203,8 +246,8 @@ _BIOSAMPLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=367,
-  serialized_end=671,
+  serialized_start=451,
+  serialized_end=700,
 )
 
 
@@ -241,21 +284,15 @@ _AGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=673,
-  serialized_end=745,
+  serialized_start=702,
+  serialized_end=774,
 )
 
-_INDIVIDUAL.fields_by_name['species'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ONTOLOGYTERM
-_INDIVIDUAL.fields_by_name['sex'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ONTOLOGYTERM
-_INDIVIDUAL.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
-_BIOSAMPLE.fields_by_name['disease'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ONTOLOGYTERM
-_BIOSAMPLE.fields_by_name['attributes'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ATTRIBUTES
-_BIOSAMPLE.fields_by_name['individual_age_at_collection'].message_type = _AGE
+_INDIVIDUAL.fields_by_name['age'].message_type = _AGE
 _AGE.fields_by_name['age_class'].message_type = ga4gh_dot_schemas_dot_ga4gh_dot_common__pb2._ONTOLOGYTERM
 DESCRIPTOR.message_types_by_name['Individual'] = _INDIVIDUAL
 DESCRIPTOR.message_types_by_name['Biosample'] = _BIOSAMPLE
 DESCRIPTOR.message_types_by_name['Age'] = _AGE
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Individual = _reflection.GeneratedProtocolMessageType('Individual', (_message.Message,), dict(
   DESCRIPTOR = _INDIVIDUAL,
